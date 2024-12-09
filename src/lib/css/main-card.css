@@ -1,0 +1,26 @@
+@keyframes in {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-card {
+    border-radius: 1rem;
+
+    box-shadow: var(--box-shadow-medium);
+    background-color: var(--color-primary);
+    
+    display: grid;
+
+    gap: 1rem;
+    padding: 1.5rem;
+
+    /* animation: in 500ms cubic-bezier(0.215, 0.61, 0.355, 1); */
+
+}

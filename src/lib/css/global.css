@@ -1,0 +1,119 @@
+:root {
+    --color-primary: #f9fafa;
+    --color-gray: #e9ebed;
+    --color-accent: #0079b3;
+    --color-brand: #3cb1ea;
+    --color-text: #132033;
+
+    --font-display: 'Signika';
+    --font-default: 'Source Sans 3';
+
+    --box-shadow-small: 0 3px 3px 0 hsla(0, 0%, 0%, 0.15);
+    --box-shadow-medium: 0 4px 6px -2px hsla(0, 0%, 0%, 0.05),
+        0 10px 15px hsla(0, 0%, 0%, 0.1);
+    --box-shadow-large: 0 5px 15px 0 hsla(0, 0%, 0%, 0.2);
+
+    --text-shadow-small: 0 3px 3px hsla(0, 0%, 0%, 0.15);
+    --text-shadow-medium: 0 4px 6px hsla(0, 0%, 0%, 0.05),
+        0 10px 15px hsla(0, 0%, 0%, 0.1);
+    --text-shadow-large: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+
+    --transition-fast: 450ms cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-medium: 500ms cubic-bezier(0.33, 1, 0.68, 1);
+
+    --gradient-accent-brand: linear-gradient(
+        to bottom right,
+        var(--color-accent),
+        var(--color-brand)
+    );
+
+    --gradient-accent-gray: linear-gradient(
+        to bottom right,
+        var(--color-accent),
+        var(--color-gray)
+    );
+
+    font-family: var(--font-default);
+    color: var(--color-text);
+}
+
+html,
+body {
+    background-color: var(--color-primary);
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+select,
+button,
+textarea {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a.button {
+    font-family: var(--font-display);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 1;
+}
+
+h4,
+p,
+label,
+button,
+a,
+td,
+li {
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
+
+small,
+h5 {
+    font-size: 0.625rem;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[src=''],
+img:not([src]) {
+    background: var(--gradient-accent-gray);
+}
+
+.highlight {
+    color: var(--color-brand);
+}
+
+.opacity-faded {
+    opacity: 0.6;
+}
