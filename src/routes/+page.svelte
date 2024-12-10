@@ -4,7 +4,7 @@
 
     if (browser) {
         goto(
-            sessionStorage.getItem('student-name') !== undefined ?
+            sessionStorage.getItem('student-name') !== null ?
                 '/dashboard'
             :   '/login'
         );
