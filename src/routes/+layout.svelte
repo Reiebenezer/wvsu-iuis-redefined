@@ -14,6 +14,7 @@
     import '$lib/css/input.css';
     import '$lib/css/button.css';
     import '$lib/css/main-card.css';
+    import logo from '$lib/assets/wvsu-logo.png';
 
     import Modal from '@/modal.svelte';
     const { children } = $props();
@@ -21,6 +22,7 @@
 
 <svelte:head>
     <title>WVSU Integrated University Information System</title>
+    <link rel="icon" href="{logo}">
 </svelte:head>
 
 <Modal />

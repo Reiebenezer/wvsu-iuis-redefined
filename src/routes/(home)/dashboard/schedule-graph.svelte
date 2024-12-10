@@ -59,7 +59,7 @@
             ...schedule[0],
         }));
 
-        schedules.forEach(({ code, date, room }) => {
+        schedules.toReversed().forEach(({ code, date, room }) => {
             const days = Object.keys(dayMap);
             date.toReversed().forEach(({ day, start_time, end_time }) => {
                 const dayIndex = days.indexOf(day);
@@ -79,7 +79,7 @@
                 console.log(code, dayIndex, timeIndex, rows);
                 const cell = node.rows
                     .item(timeIndex)
-                    ?.cells.item(dayIndex + 1);
+                    ?.cells.item(dayIndex + ((timeIndex + 1) % 2));
 
                 [...node.rows]
                     .slice(timeIndex + 1, timeIndex + rows)
@@ -163,7 +163,7 @@
             font-weight: normal;
 
             opacity: 0.6;
-            text-align: left;
+            text-align: center;
         }
         tbody tr {
             td {
