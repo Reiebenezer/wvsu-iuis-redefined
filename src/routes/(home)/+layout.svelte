@@ -30,11 +30,11 @@
                 route: '/enrollment',
                 icon: 'notebook',
             },
-            {
-                displayName: 'Inbox',
-                route: '/inbox',
-                icon: 'chat-circle',
-            },
+            // {
+            //     displayName: 'Inbox',
+            //     route: '/inbox',
+            //     icon: 'chat-circle',
+            // },
         ]} />
     <section>
         {#key data.pathname}
